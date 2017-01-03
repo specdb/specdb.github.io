@@ -1,6 +1,61 @@
 <h1>
-    This page is under construction.
+    <div style="text-align:center"> specdb </div>
 </h1>
+
+<h2>
+    Welcome to specdb, a simple suite of software for accessing
+    public spectroscopic databases and for creating your own.
+    A principal philosophy guiding specdb is that spectral datasets --
+    even in this era of `big data` -- are modest in size and therefore
+    can be widely disseminated on local machines.  The primary challenge
+    has been a lack of uniformity in data storage:  both the basics
+    like formatting and the specifics such as calibration units.
+    There have been positive steps by the IVOA including a draft
+    Spectral Data Model but these have not yet been widely adopted.
+    specdb aims to address this issue by ingesting many public datasets
+    and by providing the hooks to IVOA protocols.
+    <p></p>
+
+    The other guiding principle of specdb is to keep things simple.
+    Databases are limited to a single HDF5 file and the software
+    repository contains simple Python tools and scripts to query
+    catalogs and retrieve spectra.  These Python tools aren't even
+    necessary:  only the software to read HDF5 files.
+</h2>
+
+<h2>
+    Quick links:
+    <h3>
+    <UL>
+    <LI> <a href="https://github.com/specdb/specdb">specdb repository</a>
+    </UL>
+    </h3>
+</h2>
+
+
+<h2>
+    Public specdb databases:
+</h2>
+    <p></p>
+        <h3>
+        igmspec: This is the first major database release in specdb.  Its v02
+        includes over 500,000 quasar spectra from the SDSS-DR7, BOSS-DR12, and
+        2QZ surveys, as well as ~15 public datasets drawn from HST, Keck,
+        Magellan, Gemini and the VLT.
+        </h3>
+
+<h2>
+    <p></p>
+    Private specdb databases:
+    <p></p>
+        <h3>
+        The <a href="https://github.com/specdb/specdb">specdb repository</a> provides
+        code to generate a specdb database from your own proprietary spectral dataset.
+        Ideally, this would be added to a public specdb database upon publication.
+        </h3>
+
+</h2>
+
 
 <h2>
 See <a href="https://github.com/specdb/specdb">specdb</a>
